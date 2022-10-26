@@ -32,7 +32,7 @@ public class DemoController {
 
     @GetMapping("/authenticated")
     public ResponseEntity<InfoResponse> getAuthenticatedUserInfo() {
-        return new ResponseEntity<InfoResponse>(new InfoResponse("Hi Authenticated"), HttpStatus.OK);
+        return new ResponseEntity<InfoResponse>(new InfoResponse("Hi Authenticated USer"), HttpStatus.OK);
     }
 
     @PreAuthorize("hasAuthority('ADMIN') or hasAuthority('USER')")
