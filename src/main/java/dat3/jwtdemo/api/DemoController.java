@@ -26,7 +26,8 @@ public class DemoController {
 
     @GetMapping("/anonymous")
     public ResponseEntity<InfoResponse> getAnonymousInfo() {
-        return new ResponseEntity<InfoResponse>(new InfoResponse("Hi Non Authenticated User"), HttpStatus.OK);
+        return new ResponseEntity<InfoResponse>(new InfoResponse("Hi Non Authenticated User Here"), HttpStatus.OK);
+
     }
 
     @GetMapping("/authenticated")

@@ -100,6 +100,7 @@ public class SecurityConfig {
             .antMatchers("/api/demo/anonymous").permitAll()
 
            // .antMatchers(HttpMethod.GET,"/api/demo/anonymous").permitAll());
+            // TEST
 
            // Demonstrates another way to add roles to an endpoint
            // .antMatchers(HttpMethod.GET, "/api/demo/admin").hasAuthority("ADMIN")
